@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E57E2C60-D3A3-4CBF-A1CF-491A7B22EDA3}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MahApps.Metro.IconPacks</RootNamespace>
+    <AssemblyName>MahApps.Metro.IconPacks</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ALL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MahApps.Metro.IconPacks.XML</DocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;ALL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>CS1591</NoWarn>
+    <DocumentationFile>bin\Release\MahApps.Metro.IconPacks.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SharedKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconEntypo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconFeatherIcons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconFontAwesome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconIonicons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconMaterial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconMaterialDesign.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconMaterialLight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconModern.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconOcticons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconSimpleIcons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconTypicons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\PackIconWeatherIcons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PackIconEntypo.cs" />
+    <Compile Include="PackIconEntypoDataFactory.cs" />
+    <Compile Include="PackIconEntypoExtension.cs" />
+    <Compile Include="PackIconEntypoKind.cs" />
+    <Compile Include="PackIconExtension.cs" />
+    <Compile Include="PackIconFeatherIcons.cs" />
+    <Compile Include="PackIconFeatherIconsDataFactory.cs" />
+    <Compile Include="PackIconFeatherIconsExtension.cs" />
+    <Compile Include="PackIconFeatherIconsKind.cs" />
+    <Compile Include="PackIconFontAwesome.cs" />
+    <Compile Include="PackIconFontAwesomeDataFactory.cs" />
+    <Compile Include="PackIconFontAwesomeExtension.cs" />
+    <Compile Include="PackIconFontAwesomeKind.cs" />
+    <Compile Include="PackIconIonicons.cs" />
+    <Compile Include="PackIconIoniconsDataFactory.cs" />
+    <Compile Include="PackIconIoniconsExtension.cs" />
+    <Compile Include="PackIconIoniconsKind.cs" />
+    <Compile Include="PackIconMaterial.cs" />
+    <Compile Include="PackIconMaterialDataFactory.cs" />
+    <Compile Include="PackIconMaterialDesign.cs" />
+    <Compile Include="PackIconMaterialDesignDataFactory.cs" />
+    <Compile Include="PackIconMaterialDesignExtension.cs" />
+    <Compile Include="PackIconMaterialDesignKind.cs" />
+    <Compile Include="PackIconMaterialExtension.cs" />
+    <Compile Include="PackIconMaterialKind.cs" />
+    <Compile Include="PackIconMaterialLight.cs" />
+    <Compile Include="PackIconMaterialLightDataFactory.cs" />
+    <Compile Include="PackIconMaterialLightExtension.cs" />
+    <Compile Include="PackIconMaterialLightKind.cs" />
+    <Compile Include="PackIconModern.cs" />
+    <Compile Include="PackIconModernDataFactory.cs" />
+    <Compile Include="PackIconModernExtension.cs" />
+    <Compile Include="PackIconModernKind.cs" />
+    <Compile Include="PackIconOcticons.cs" />
+    <Compile Include="PackIconOcticonsDataFactory.cs" />
+    <Compile Include="PackIconOcticonsExtension.cs" />
+    <Compile Include="PackIconOcticonsKind.cs" />
+    <Compile Include="PackIconSimpleIcons.cs" />
+    <Compile Include="PackIconSimpleIconsDataFactory.cs" />
+    <Compile Include="PackIconSimpleIconsExtension.cs" />
+    <Compile Include="PackIconSimpleIconsKind.cs" />
+    <Compile Include="PackIconTypicons.cs" />
+    <Compile Include="PackIconTypiconsDataFactory.cs" />
+    <Compile Include="PackIconTypiconsExtension.cs" />
+    <Compile Include="PackIconTypiconsKind.cs" />
+    <Compile Include="PackIconWeatherIcons.cs" />
+    <Compile Include="PackIconWeatherIconsDataFactory.cs" />
+    <Compile Include="PackIconWeatherIconsExtension.cs" />
+    <Compile Include="PackIconWeatherIconsKind.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="SharedKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MahApps.Metro.IconPacks.Core\MahApps.Metro.IconPacks.Core.csproj">
+      <Project>{9d0d425e-e4f3-4c1c-833e-22016be1c36b}</Project>
+      <Name>MahApps.Metro.IconPacks.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

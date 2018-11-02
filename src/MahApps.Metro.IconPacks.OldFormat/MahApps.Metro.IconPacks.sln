@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Metro.IconPacks", "MahApps.Metro.IconPacks\MahApps.Metro.IconPacks.csproj", "{E57E2C60-D3A3-4CBF-A1CF-491A7B22EDA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Metro.IconPacks.Core", "MahApps.Metro.IconPacks.Core\MahApps.Metro.IconPacks.Core.csproj", "{9D0D425E-E4F3-4C1C-833E-22016BE1C36B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E57E2C60-D3A3-4CBF-A1CF-491A7B22EDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57E2C60-D3A3-4CBF-A1CF-491A7B22EDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57E2C60-D3A3-4CBF-A1CF-491A7B22EDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57E2C60-D3A3-4CBF-A1CF-491A7B22EDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0D425E-E4F3-4C1C-833E-22016BE1C36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0D425E-E4F3-4C1C-833E-22016BE1C36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0D425E-E4F3-4C1C-833E-22016BE1C36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0D425E-E4F3-4C1C-833E-22016BE1C36B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
