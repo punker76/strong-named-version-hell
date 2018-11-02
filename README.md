@@ -1,13 +1,15 @@
 # strong-named-version-hell
 This repo tries to understand strong naming with the new msbuild sdk csproj format
 
-*MahApps.Metro.IconPacks.OldFormat* uses the old csproj format. It builds a strong named assembly with the Release configuration.
+**MahApps.Metro.IconPacks.OldFormat** uses the old csproj format. It builds a strong named assembly with the Release configuration.
 
-*MahApps.Metro.IconPacks.NewFormat* uses the new csproj format together with the [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) from Oren Novotny @onovotny. It builds also a strong named assembly with the Release configuration.
+**MahApps.Metro.IconPacks.NewFormat** uses the new csproj format together with the [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) from Oren Novotny [@onovotny](https://github.com/onovotny). It builds also a strong named assembly with the Release configuration.
 
-The *WorkingApp* use now the assemblies from `MahApps.Metro.IconPacks.OldFormat` and all works fine.
+The **WorkingApp** use the assemblies from `MahApps.Metro.IconPacks.OldFormat` and all works fine.
 
-The *NonWorkingApp* use now the assemblies from *MahApps.Metro.IconPacks.NewFormat*. Now I get a `System.IO.FileLoadException`:
+The **NonWorkingApp** use now the assemblies from **MahApps.Metro.IconPacks.NewFormat**.
+
+Now I get a `System.IO.FileLoadException`:
 
 ```
 System.IO.FileLoadException occurred
@@ -39,7 +41,7 @@ ERR: Das Setup der Assembly konnte nicht abgeschlossen werden (hr = 0x80131040).
 
 ![2018-11-02_13h38_21](https://user-images.githubusercontent.com/658431/47916322-14d15280-dea6-11e8-9abe-6654eb1063b1.png)
 
-*FusionLog*
+**FusionLog**
 
 ```
 === Zustandsinformationen vor Bindung ===
@@ -59,7 +61,7 @@ WRN: Der Vergleich des Assemblynamens führte zum Konflikt: Hauptversion.
 ERR: Das Setup der Assembly konnte nicht abgeschlossen werden (hr = 0x80131040). Die Suche wurde beendet.
 ```
 
-I get this exception only if I checked the "Enable .NET Framework source stepping", but other users get it also without these setting.
+This exception occures only if I checked the "Enable .NET Framework source stepping", but other users get it also without these setting.
 
 ![2018-11-02_13h41_31](https://user-images.githubusercontent.com/658431/47916299-0420dc80-dea6-11e8-8981-75ddcda1ba02.png)
 
